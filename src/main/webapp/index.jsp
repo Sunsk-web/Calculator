@@ -91,7 +91,7 @@
           <tr>
             <td colspan="2"><input type="submit" class="btn btn-primary"></td>
           </tr>
-  <button  onclick="add()"></button>
+ 
 
   <!--<div id="res"></div>-->
 
