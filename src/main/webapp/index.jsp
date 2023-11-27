@@ -28,22 +28,42 @@
   }
 
   body {
-    background-color: cornflowerblue;
+    background-color: rgb(140, 252, 190);
   }
 
   div {
+    
+  }
+  #div1{
     position: absolute;
+    /*height: 300px;*/
+    /*font-weight: 400px;*/
+  }
+  #si{
+    text-align: red;
+  }
+  #dc{
+    
+       height: 300px;
+    font-weight: 400px;
+    background-color: rgb(48, 235, 190);
+    
+    
   }
 </style>
 
 <body>
-  <div>
+  
+  
+  <div id="dc">
+  
+  <div id="div1">
     <form >
 
       <fieldset id="h1" style="">
-        <legend>Intrest Calculator</legend>
+        <legend>  <h2>Intrest Calculator</h2>  </legend>
 		<input type="radio" name="si" value="si"> <lable>Simple Intrest</lable>
-<input type="radio" name="ci" value="compoundIntrest" id="ci"> <lable>Compound Intrest</lable>
+<input type="radio" name="si" value="compoundIntrest" id="ci"> <lable>Compound Intrest</lable>
 		
         <table id="table1">
           <tr id="abc">
@@ -73,7 +93,7 @@
           </tr>
   <button  onclick="add()"></button>
 
-  <div id="res"></div>
+  <!--<div id="res"></div>-->
 
         </table>
 
@@ -84,11 +104,6 @@
     </form>
     
   </div>
-<div>
-
-
-
-
 
 
 </div>
