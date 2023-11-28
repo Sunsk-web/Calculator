@@ -1,6 +1,6 @@
 <html>
 
-<head> Intrest calculator</head>
+<head> <h1> interest calculator</h1></head>
 <style>
   #h1 {
     background: blueviolet;
@@ -12,7 +12,7 @@
 
   #h1
   {
-    margin-left: 35vw;
+    margin-left: 35px;
     
   }
 
@@ -36,8 +36,7 @@
   }
   #div1{
     position: absolute;
-    /*height: 300px;*/
-    /*font-weight: 400px;*/
+  
   }
   #si{
     text-align: red;
@@ -58,42 +57,41 @@
   <div id="dc">
   
   <div id="div1">
-    <form >
+    <form action="InterestCalculatorServlet" method="post">
 
       <fieldset id="h1" style="">
-        <legend>  <h2>Intrest Calculator</h2>  </legend>
-		<input type="radio" name="si" value="si"> <lable>Simple Intrest</lable>
-<input type="radio" name="si" value="compoundIntrest" id="ci"> <lable>Compound Intrest</lable>
+        <legend>  <h2>interest Calculator</h2>  </legend>
+		<input type="radio" name="interestType" value="simple" id="ci" checked> <label>Simple interest</label>
+<input type="radio" name="interestType" value="compound" id="si"> <label>Compound interest</label>
 		
         <table id="table1">
           <tr id="abc">
-            <td>Enter a loan amount</td>
-            <td> <input type="number" name="amount" id="amount" placeholder="Enter amount"></td>
+            <td> <lable></lable> Enter a loan amount </lable></td>
+            <td> <input type="number" name="principal" id="principal" placeholder="Enter principal"></td>
           </tr>
           <tr>
-            <!-- <td>
-              <lable>Year</lable> 
-            </td>
-            <td>
-              <input type="number" name="year"placeholder="enter year" id="year">
-            </td>  -->
-          </tr>
+        <tr>
+          <td>
+            <label > Years</label>
+          </td>
+          <td><input type="number" name="years" id="years"  placeholder="enter years"></td>
+        </tr>
+  
           <tr>
             <td> Enter month</td>
-            <td> <input type="number" name="month" id="month" placeholder="enter month"></td> <br>
+            <td> <input type="number" name="months" id="months" placeholder="enter month"></td> <br>
           </tr>
           <tr>
             <td>
-              <lable>rate of intrest ( P A)</lable>
+              <label>rate of interest ( P A)</label>
             </td>
-            <td> <input type="number" name="intrest" id="intrest" placeholder="enter intrest "></td>
+            <td> <input type="number" name="rate" id="rate" placeholder="enter interest rate % "></td>
           </tr>
           <tr>
-            <td colspan="2"><input type="submit" class="btn btn-primary"></td>
+            <td colspan="2"><button type="submit" id="submit">submit</button></td>
           </tr>
  
 
-  <!--<div id="res"></div>-->
 
         </table>
 
